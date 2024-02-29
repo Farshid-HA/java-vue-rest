@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  server:
+    container_name: server
+    build: 
+      context: ./exchange-api
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+  client:
+    container_name: client
+    build: 
+      context: ./exchange-client
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8081'
+      
+  

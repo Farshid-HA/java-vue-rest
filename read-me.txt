@@ -1,0 +1,4 @@
+The application (server and client) is already containerized.
+If you have a docker desktop, you just need to open the command prompt on this folder, and type:
+
+docker-compose up --build
